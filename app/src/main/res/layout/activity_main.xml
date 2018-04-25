@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="75dp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textCurrentTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current message: " />
+
+        <TextView
+            android:id="@+id/textCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:hint="Message"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLength="20"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkMsgOnly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Message only"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <CheckBox
+                android:id="@+id/checkCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Cycle"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnRemoveMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Remove message" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

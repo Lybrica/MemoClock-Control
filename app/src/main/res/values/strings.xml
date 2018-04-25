@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MemoClock Control</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="led1_text">Led 1</string>
+    <string name="led2_text">Led 2</string>
+    <string name="led2_bt_text">Led 2</string>
+    <array name="colors">
+        <item>Black</item>
+        <item>Blood</item>
+        <item>Blue</item>
+    </array>
+</resources>
